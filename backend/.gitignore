@@ -1,0 +1,22 @@
+# Ignore files and folders
+
+# IDE settings
+*.iml
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+bin/
+obj/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Add your own custom ignores here

@@ -1,0 +1,162 @@
+.container{
+    background-color: rgb(132 132 133 / 52%);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px 0;
+    overflow-x: auto;
+
+}
+
+.dragAndDropArea {
+    border: 2px dashed #df3333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    width: 70%;
+    background-color: azure;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.dragAndDropArea:hover {
+    background-color: rgba(217, 252, 252, 0.635);
+}
+
+.brouse {
+    color: #00f;
+}
+
+.dragAndDropArea.active {
+    border-color: #00f;
+}
+
+.fileInput {
+    display: none;
+}
+
+.dragText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.outer {
+    border-radius: 20px;
+    background-color: aliceblue;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copyLink {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: rgba(215, 215, 245, 0.595);
+    padding: 2px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: -5px;
+    border: rgb(231, 102, 102) dashed 2px;
+    margin: 5px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.copyLink img{
+    
+    width: 20px;
+    height: inherit;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    margin: 0 auto;
+}
+
+ .copyLink img:hover {  
+    opacity: 0.7; /* Change this value to whatever effect you want on hover */
+ } 
+
+
+.copyLink button{
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+/* .Link a{
+    background-color: inherit;
+} */
+
+
+/* .download{
+    width: 400px;
+    height: 80px;
+    background-color: rgb(23, 174, 124);
+    margin-bottom: 20px;
+    border-radius: 20px;
+} */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 0.71px;
+}
+
+.selectbtn {
+    width: 100px;
+    padding:10px 10px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    border: none;
+    background-color: rgb(238, 229, 229);
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.selectbtn:hover{
+    background-color: rgba(245, 210, 210, 0.76);
+}
+
+.cloudfileImg {
+    width: 80px;
+    object-fit: contain;
+}
+
+.linee{
+    height: 0px;
+    margin: 40px 0;
+    border: #5b797b dashed 1.7px;
+    max-width: 100%;
+}
+
+.rightImg {
+    width: 40%;
+    height: 40%;
+    
+    
+}
+
+.rightImg img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

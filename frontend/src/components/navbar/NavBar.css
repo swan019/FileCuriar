@@ -1,0 +1,11 @@
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .logo span {
+    color: #00698f;
+  }
